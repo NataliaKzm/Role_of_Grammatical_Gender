@@ -3,16 +3,15 @@
 //shuffleSequence = seq("intro", "expo1");
 //shuffleSequence = seq("home","intro","fam", sepWith("sep",shuffle(randomize("expo1"), randomize("expo2")))); //buona ok
 
-shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))));
+shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler")))); //here is the order of scripts
 
 
 //shuffleSequence = seq("test"),("filler");   //
-
 //shuffleSequence = seq(sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))));
 
 var progressBarText = "progression";
 
-var practiceMessage = "session de familiaristion";
+var practiceMessage = "session de familiaristion"; //FRENCH - translate this to English
 completionMessage = "We have received all your answers. Thank you so much for the time which you dedicated to this project.";
 var defaults = [
     "Separator", {
@@ -26,8 +25,8 @@ var defaults = [
     "AcceptabilityJudgment", {
         as: ["-3", "-2", "-1", "0", "1", "2", "3"],
         presentAsScale: true,
-        instructions: "Cliquez sur la case de votre choix",
-        leftComment: "absolument inacceptable", rightComment: "parfaitement acceptable"
+        instructions: "Click here to continue",
+        leftComment: "absolutely unacceptable", rightComment: "perfectly acceptable"
     },
     "Question", {
         hasCorrect: true
@@ -201,8 +200,8 @@ var defaults = [
     "AcceptabilityJudgment", {
         as: ["-3", "-2", "-1", "0", "1", "2", "3"],
         presentAsScale: true,
-        instructions: "Cliquez sur la case de votre choix",
-        leftComment: "absolument inacceptable", rightComment: "parfaitement acceptable"
+        instructions: "Click on the box of your choice",
+        leftComment: "absolutely unacceptable", rightComment: "perfectly acceptable"
     },
     "Question", {
         hasCorrect: true
