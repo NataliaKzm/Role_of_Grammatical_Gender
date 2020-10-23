@@ -11,11 +11,11 @@ jqueryWidget: {
 
         this.html = dget(this.options, "html");
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
-        this.continueMessage = dget(this.options, "continueMessage", "Cliquez ici pour continuer");
-        this.checkedValue = dget(this.options, "checkedValue", "s&igrave;s");
-        this.uncheckedValue = dget(this.options, "uncheckedValue", "no");
+        this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
+        this.checkedValue = dget(this.options, "checkedValue", "Yes");
+        this.uncheckedValue = dget(this.options, "uncheckedValue", "No");
         this.validators = dget(this.options, "validators", { });
-        this.errorCSSClass = dget(this.options, "errorCSSClass", "errore");
+        this.errorCSSClass = dget(this.options, "errorCSSClass", "Error");
         this.saveReactionTime = dget(this.options, "saveReactionTime", false);
         this.obligatoryErrorGenerator =
             dget(this.options, "obligatoryErrorGenerator",
