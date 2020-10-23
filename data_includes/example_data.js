@@ -3,7 +3,7 @@
 //shuffleSequence = seq("intro", "expo1");
 //shuffleSequence = seq("home","intro","fam", sepWith("sep",shuffle(randomize("expo1"), randomize("expo2")))); //buona ok
 
-shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler")))); //here is the order of scripts
+shuffleSequence = seq("home","intro","instruction", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler")))); //here is the order of scripts
 
 
 //shuffleSequence = seq("test"),("filler");   //
@@ -11,7 +11,7 @@ shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",se
 
 var progressBarText = "progression";
 
-var practiceMessage = "session de familiaristion"; //FRENCH - translate this to English
+var practiceMessage = "familiaristion session"; 
 completionMessage = "We have received all your answers. Thank you so much for the time which you dedicated to this project.";
 var defaults = [
     "Separator", {
@@ -79,8 +79,8 @@ var items = [
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
-    ["fam", "Formit", {
-        html: { include: "iniziofam.html" },
+    ["instruction", "Formit", {
+        html: { include: "instruction.html" },
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
@@ -177,7 +177,7 @@ var items = [
 //shuffleSequence = seq("intro", "expo1");
 //shuffleSequence = seq("home","intro","fam", sepWith("sep",shuffle(randomize("expo1"), randomize("expo2")))); //buona ok
 
-shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))));
+shuffleSequence = seq("home","intro","instruction", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))));
 
 
 //shuffleSequence = seq("test"),("filler");   //
@@ -186,7 +186,7 @@ shuffleSequence = seq("home","intro","fam", sepWith("sep","practice"), "sexp",se
 
 var progressBarText = "progression";
 
-var practiceMessage = "session de familiaristion";
+var practiceMessage = "familiaristion session";
 completionMessage = "We have received all your answers. Thank you so much for the time which you dedicated to this project.";
 var defaults = [
     "Separator", {
@@ -254,8 +254,8 @@ var items = [
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
-    ["fam", "Formit", {
-        html: { include: "iniziofam.html" },
+    ["instruction", "Formit", {
+        html: { include: "instruction.html" },
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
