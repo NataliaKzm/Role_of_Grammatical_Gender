@@ -12,7 +12,7 @@ shuffleSequence = seq("home","intro","instruction", sepWith("sep","practice"), "
 var progressBarText = "progression";
 
 var practiceMessage = "familiaristion session"; 
-completionMessage = "Thank you";
+completionMessage = "You have successfully submitted the answers";
 var defaults = [
     "Separator", {
         transfer: 1000,
