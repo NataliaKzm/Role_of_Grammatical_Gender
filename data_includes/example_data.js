@@ -3,7 +3,7 @@
 //shuffleSequence = seq("intro", "expo1");
 //shuffleSequence = seq("home","intro","fam", sepWith("sep",shuffle(randomize("expo1"), randomize("expo2")))); //buona ok
 
-shuffleSequence = seq("home","intro","instruction", sepWith("sep","practice"), sepWith("sep","experiment"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))), "debriefing"); //here is the order of scripts
+shuffleSequence = seq("home","intro","instruction", sepWith("sep","practice"), "sexp",sepWith("sep",shuffle(randomize("test"), randomize("filler"))), "debriefing"); //here is the order of scripts
 
 
 //shuffleSequence = seq("test"),("filler");   //
